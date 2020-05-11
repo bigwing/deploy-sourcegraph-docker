@@ -584,7 +584,7 @@ services:
       - sourcegraph
     restart: always
 
-watchtower:
+  watchtower:
     container_name: watchtower
     image: containrrr/watchtower
     volumes:
@@ -608,5 +608,6 @@ volumes:
   sourcegraph-frontend-internal-0:
   symbols-0:
   zoekt-0-shared:
+  watchtower:
 networks:
   sourcegraph:
